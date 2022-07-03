@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>about</title>
+</head>
+
+<body>
+    <h1>გუნდის შესახებ ინფორმაცია</h1>
+    <!--    ამ გვერდზე არსებული თეგები და ატრიბუტები არ შეცვალოთ -->
+    <!--    სტილის დამატება აუცილებელი არაა, ამ ინფორმაციას პროგრამა იღებს უბრალოდ -->
+    <h2>სახელი:
+        <!--        ქვემოთ span-ში ჩაწერეთ გუნდის სახელი-->
+        <span id="team-name">Forecasting Queens</span>
+    </h2>
+    <h2>წევრები</h2>
+    <!--      ქვემოთ მოცემულია ოთხი გრაფა, რომელიც გუნდის ყველა წევრმა უნდა შეავსოს  -->
+    <div id="member1">
+        <h3>
+            <!--        სახელი და გვარი-->
+            <span class="name-surname">რუსუდან მალაღურაძე</span><br>
+            <!--        emailid (freeuni.edu.ge-ს გარეშე)-->
+            <span class="emailid">rmala21</span>
+        </h3>
+        <h4>მოვალეობები</h4>
+        <p><strong>ასევე დააკონკრეტ რაზე რამდენი დრო დახარჯე, რა გადაწყვეტილებები მიიღე</strong></p>
+        <div class="responsibilities">
+            ჩემი მთავარი სამუშაო იყო index.html გვერდი. გვერდის მთავარი ფუნქციონალისთვის დავწერე ფუნქცია რომელიც
+            დინამიურად ხატავს ქალაქების ბარათებს წინასწარ შევსებული მასივის მიხედვით. ამით თავიდან ავირიდე html-ში ერთი
+            და იგივე კოდის ფრაგმენტების მრავალჯერადი გამოყენება და შემდგომი ცვლილებებიც უფრო მარტივი გახდა.
+            დავწერე ფუნქციები: getCurrent(), addElements() და ნაწილი ფუნქციისა updateUnits()
+        </div>
+        <h4>მოძიებული/გამოყენებული რესურსები. რა ისწავლე და რა უნარები განავითარე</h4>
+        <div class="resources">
+            https://freeuni-digital-technologies.github.io/classwork/10_todo_app_api/,
+            https://www.weatherapi.com/,
+            https://www.w3schools.com/jsref/prop_element_children.asp,
+
+            ვისწავლე API-ს გამოყენებით ინფორმაციის წამოღება, json-ის დამუშავება და ამ ინფორმაციის საიტზე გამოტანა.
+            ჯავასკრიპტიდან HTML ელემენტების შექმნა და რედაქტირება.
+        </div>
+    </div>
+    <div id="member2">
+        <h3>
+            <span class="name-surname">ნათია ყველაშვილი</span><br>
+            <span class="emailid">nkvel21</span>
+        </h3>
+        <h4>მოვალეობები</h4>
+        <p><strong>ასევე დააკონკრეტ რაზე რამდენი დრო დახარჯე, რა გადაწყვეტილებები მიიღე</strong></p>
+        <div class="responsibilities">
+            მე დამევალა city.html გვერდის აწყობა. დამჭირდა fillDetails() და fillForecast() ფუნქციების დაწერა. პირველი
+            იღებს დეტალურ ინფორმაციას ამჟამინდელ ამინდზე, ხოლო მეორე, უახლოესი სამი დღის პროგნოზს (სამწუხაროდ, API-ს
+            უფასო ვერსია, რომელიც გამოვიყენეთ არ შეიცავს სამ დღეზე მეტ ინფორმაციას)
+            ასევე შევავსე რუსუდანის ფუნქცია updateUnits(), რომ ჩემს გვერდსაც მორგებოდა.
+            ამასთან, შევქმენი changeToLatin() მეთოდი, რომელიც ქართულად შეყვანილ ტექსტს გადაიყვანს ინგლისურ სიმბოლოებში.
+        </div>
+        <h4>მოძიებული/გამოყენებული რესურსები. რა ისწავლე და რა უნარები განავითარე</h4>
+        <div class="resources">
+            https://www.w3schools.com/jsref/prop_element_children.asp,
+            https://stackoverflow.com/questions/45056126/convert-input-language-while-typing-in,
+            https://www.codegrepper.com/code-examples/javascript/get%20time%20from%20datetime%20javascript
+
+            ვისწავლე საიტის url-დან ინფორმაციის ამოკითხვა. HTML ელემენტების დამუშავება კოდით.
+        </div>
+    </div>
+    <div id="member3">
+        <h3>
+            <span class="name-surname">ნინო ტუღუში</span><br>
+            <span class="emailid">ntugh21</span>
+        </h3>
+        <h4>მოვალეობები</h4>
+        <p><strong>ასევე დააკონკრეტ რაზე რამდენი დრო დახარჯე, რა გადაწყვეტილებები მიიღე</strong></p>
+        <div class="responsibilities">
+            დიზაინი: საიტის ლეიაუთი, და სტილები.
+            მუდმივად ვმუშაობდი გუნდის სხვა წევრებთან ერთად, რათა მყისიერად მიგვეცა დასრულებული სახე თითოეული
+            ელემენტისთვის.
+            საიტისთვის დინამიურობის შესაძენად საჭირო იყო კარგად დაგეგმვა ყველაფრის, განსაკუთრებით კლასების და აიდების
+            დახარისხება.
+            ასევე მოვიძიე და დავამუშავე საიტისთვის ლოგო და ბექგრაუნდები ბანერებისთვის.
+        </div>
+        <h4>მოძიებული/გამოყენებული რესურსები. რა ისწავლე და რა უნარები განავითარე</h4>
+        <div class="resources">
+            https://www.w3schools.com/css/css_align.asp,
+            https://www.w3schools.com/howto/howto_css_switch.asp,
+            https://www.freepik.com/,
+            https://www.w3schools.com/howto/howto_css_searchbar.asp
+
+            ვისწავლე header-ის და footer-ის გაკეთება, ელემენტების გაცენტრვა position: absolute და transform-ის
+            გამოყენებით.
+            '+' სელექტორის გამოყენება
+            :before :hover :checked სელექტორებთან მუშაობა.
+        </div>
+    </div>
+</body>
+
+</html>

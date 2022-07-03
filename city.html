@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
+    <title>SunCloud Weather</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="img/Logo.png" alt="Logo"></a>
+        <form id="searchForm" action="city.html" method="get">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <div class="toggle">
+            ℃
+            <label class="switch">
+                <input type="checkbox" id="unit" onchange="updateUnits()">
+                <span class="slider round"></span>
+            </label>
+            ℉
+        </div>
+    </header>
+    <section>
+        <div id="CITYNAME" class="big-card">
+            <h3 id="cityName"></h3> <span id="time">As of 00:00</span> <br>
+            <img id="weatherImage" src="">
+            <p class="degree"></p>
+            <p id="minMax"></p>
+            <img id="wind" src="img/arrow_up.png"><span class="wind"></span>
+        </div>
+
+        <div class="big-card forecast">
+            <div class="card daily">
+                <p>date</p>
+                <img src="">
+                <p class="degree" id="1"></p>
+            </div>
+            <div class="card daily">
+                <p>date</p>
+                <img src="">
+                <p class="degree" id="2"></p>
+            </div>
+            <div class="card daily">
+                <p>date</p>
+                <img src="">
+                <p class="degree" id="3"></p>
+            </div>
+        </div>
+    </section>
+    <script>
+        var args = decodeURI(window.location.search);
+        args = args.substring(1, args.length);
+        if (args) {
+            const city = args.split("=")[1];
+            fillDetails(city);
+        }
+    </script>
+    <footer>
+        <a href="https://www.weatherapi.com/" class="service">
+            <div>
+                <span>Powered by</span>
+                <img src="http://cdn.weatherapi.com/v4/images/weatherapi_logo.png">
+            </div>
+        </a>
+        <p>© 2022. ყველა უფლება დაცულია. <a href="about.html">ჩვენს შესახებ</a></p>
+    </footer>
+</body>
+
+</html>
